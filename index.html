@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#052c4f" />
+    <meta name="description" content="Contact SentriX AI, AI-powered workplace safety." />
+    <title>Contact Us | SentriX AI</title>
+    <link rel="icon" type="image/png" href="/sentrix-mark.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div class="scan-grid" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="SentriX AI home">
+        <span class="brand-crop"><img src="/sentrix-logo.png" alt="SentriX AI" /></span>
+      </a>
+      <nav aria-label="Language">
+        <div class="language-switch" role="group" aria-label="Choose language">
+          <button type="button" data-lang="ar" class="active">AR</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="intro" aria-labelledby="page-title">
+        <div class="eyebrow"><span class="live-dot"></span><span data-copy="eyebrow"></span></div>
+        <h1 id="page-title"><span data-copy="title"></span><em>.</em></h1>
+        <p class="lead" data-copy="description"></p>
+        <div class="trust-line">
+          <span class="shield-icon" aria-hidden="true">✓</span>
+          <span data-copy="trust"></span>
+        </div>
+      </section>
+
+      <section class="contact-layout" aria-label="Contact options">
+        <div class="channels-panel">
+          <div class="section-heading">
+            <div>
+              <span class="section-index">01</span>
+              <h2 data-copy="channelsTitle"></h2>
+            </div>
+            <span class="scan-status"><i></i><span data-copy="verified"></span></span>
+          </div>
+          <div id="channel-list" class="channel-list"></div>
+          <div id="channel-empty" class="channel-empty" hidden>
+            <span class="empty-mark" aria-hidden="true">S</span>
+            <p data-copy="noChannels"></p>
+          </div>
+        </div>
+
+        <div class="form-panel">
+          <div class="section-heading">
+            <div>
+              <span class="section-index">02</span>
+              <h2 data-copy="formTitle"></h2>
+            </div>
+          </div>
+          <form name="sentrix-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="sentrix-contact" />
+            <p class="hidden"><label>Do not fill this out: <input name="bot-field" /></label></p>
+            <div class="field-row">
+              <label><span data-copy="nameLabel"></span><input name="name" type="text" autocomplete="name" required data-placeholder="namePlaceholder" /></label>
+              <label><span data-copy="emailLabel"></span><input name="email" type="email" autocomplete="email" required data-placeholder="emailPlaceholder" /></label>
+            </div>
+            <label><span data-copy="companyLabel"></span><input name="company" type="text" autocomplete="organization" data-placeholder="companyPlaceholder" /></label>
+            <label><span data-copy="messageLabel"></span><textarea name="message" rows="4" required data-placeholder="messagePlaceholder"></textarea></label>
+            <button class="submit-button" type="submit">
+              <span data-copy="submit"></span>
+              <span class="arrow" aria-hidden="true">↗</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> SentriX AI</p>
+      <p data-copy="footer"></p>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
