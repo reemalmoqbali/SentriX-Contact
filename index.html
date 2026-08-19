@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#052c4f" />
-    <meta name="description" content="Contact SentriX AI, AI-powered workplace safety." />
-    <title>Contact Us | SentriX AI</title>
+    <meta name="theme-color" content="#041c38" />
+    <meta name="description" content="Connect with SentriX AI — official contact channels." />
+    <title>Connect | SentriX AI</title>
     <link rel="icon" type="image/png" href="/sentrix-mark.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,52 +13,47 @@
     <link rel="stylesheet" href="/src/styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="SentriX AI home">
-        <span class="brand-crop"><img src="/sentrix-logo.png" alt="SentriX AI" /></span>
-      </a>
-      <nav aria-label="Language">
-        <div class="language-switch" role="group" aria-label="Choose language">
-          <button type="button" data-lang="ar" class="active">AR</button>
-          <button type="button" data-lang="en">EN</button>
-        </div>
-      </nav>
-    </header>
+    <div class="page-bg" aria-hidden="true"></div>
+    <div class="scan-corners" aria-hidden="true"></div>
 
-    <main id="top">
-      <section class="intro" aria-labelledby="page-title">
-        <h1 id="page-title"><span data-copy="title"></span><em>.</em></h1>
-        <p class="lead" data-copy="description"></p>
-      </section>
-
-      <section class="contact-layout" aria-label="Contact options">
-        <div class="channels-panel">
-          <div class="section-heading"><h2 data-copy="channelsTitle"></h2></div>
-          <div id="channel-list" class="channel-list"></div>
-          <div id="channel-empty" class="channel-empty" hidden>
-            <span class="empty-mark" aria-hidden="true">S</span>
-            <p data-copy="noChannels"></p>
+    <div class="shell">
+      <main class="card-hub">
+        <header class="top-bar">
+          <div class="language-switch" role="group" aria-label="Language">
+            <button type="button" data-lang="ar" aria-pressed="false">AR</button>
+            <span class="lang-sep" aria-hidden="true">|</span>
+            <button type="button" data-lang="en" class="active" aria-pressed="true">EN</button>
           </div>
+        </header>
+
+        <div class="brand-block">
+          <div class="brand-mark-wrap">
+            <img class="brand-mark" src="/sentrix-mark.png" alt="SentriX AI" />
+          </div>
+          <p class="brand-name">SENTRIX AI</p>
+          <p class="brand-tag" data-copy="tagline"></p>
         </div>
 
-        <div class="form-panel">
-          <div class="section-heading"><h2 data-copy="formTitle"></h2></div>
-          <form name="sentrix-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="sentrix-contact" />
-            <p class="hidden"><label>Do not fill this out: <input name="bot-field" /></label></p>
-            <div class="field-row">
-              <label><span data-copy="nameLabel"></span><input name="name" type="text" autocomplete="name" required data-placeholder="namePlaceholder" /></label>
-              <label><span data-copy="emailLabel"></span><input name="email" type="email" autocomplete="email" required data-placeholder="emailPlaceholder" /></label>
-            </div>
-            <label><span data-copy="companyLabel"></span><input name="company" type="text" autocomplete="organization" data-placeholder="companyPlaceholder" /></label>
-            <label><span data-copy="messageLabel"></span><textarea name="message" rows="4" required data-placeholder="messagePlaceholder"></textarea></label>
-            <button class="submit-button" type="submit"><span data-copy="submit"></span><span class="arrow" aria-hidden="true">&#8599;</span></button>
-          </form>
-        </div>
-      </section>
-    </main>
+        <section class="intro-block" aria-labelledby="page-title">
+          <h1 id="page-title" data-copy="title"></h1>
+          <p class="lead" data-copy="subtitle"></p>
+        </section>
 
-    <footer><p>&copy; <span id="year"></span> SentriX AI</p><p data-copy="footer"></p></footer>
+        <div class="divider" aria-hidden="true"></div>
+
+        <section class="channels" aria-labelledby="channels-title">
+          <h2 id="channels-title" data-copy="channelsTitle"></h2>
+          <div id="channel-list" class="channel-list"></div>
+        </section>
+
+        <footer class="hub-footer">
+          <div class="divider" aria-hidden="true"></div>
+          <p class="footer-note" data-copy="footerNote"></p>
+          <p class="footer-copy">&copy; <span id="year"></span> SentriX AI</p>
+        </footer>
+      </main>
+    </div>
+
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
