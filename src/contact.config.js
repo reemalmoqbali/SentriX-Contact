@@ -51,11 +51,10 @@ export const contactChannels = [
   {
     id: "email",
     platform: { ar: "البريد", en: "EMAIL" },
-    // Waiting for official email — do not invent an address
     handle: {
-      ar: "ADD_OFFICIAL_EMAIL",
-      en: "ADD_OFFICIAL_EMAIL",
+      ar: "sentrixai2026@gmail.com",
+      en: "sentrixai2026@gmail.com",
     },
-    url: "",
+    url: "mailto:sentrixai2026@gmail.com",
   },
 ];
