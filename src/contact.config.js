@@ -13,25 +13,22 @@ export const brand = {
 
 export const contactChannels = [
   {
-    id: "instagram",
-    platform: { ar: "إنستغرام", en: "INSTAGRAM" },
-    // PLACEHOLDER — replace with official Instagram handle when available
-    handle: {
-      ar: "ADD_INSTAGRAM_USERNAME",
-      en: "ADD_INSTAGRAM_USERNAME",
-    },
-    // PLACEHOLDER — e.g. "https://www.instagram.com/your_official_handle/"
-    url: "",
-  },
-  {
     id: "whatsapp",
     platform: { ar: "واتساب", en: "WHATSAPP" },
     handle: {
-      ar: "تواصل مع SentriX AI",
-      en: "Chat with SentriX AI",
+      ar: "+968 90985654",
+      en: "+968 90985654",
     },
-    // PLACEHOLDER — e.g. "https://wa.me/968XXXXXXXX"
-    url: "",
+    url: "https://wa.me/96890985654",
+  },
+  {
+    id: "instagram",
+    platform: { ar: "إنستغرام", en: "INSTAGRAM" },
+    handle: {
+      ar: "@sentrix_ai",
+      en: "@sentrix_ai",
+    },
+    url: "https://www.instagram.com/sentrix_ai?igsi=NmE2enc5NnRoN2o1",
   },
   {
     id: "linkedin",
@@ -40,18 +37,25 @@ export const contactChannels = [
       ar: "تابع SentriX AI على LinkedIn",
       en: "Follow SentriX AI on LinkedIn",
     },
-    // PLACEHOLDER — e.g. "https://www.linkedin.com/company/your-official-page/"
-    url: "",
+    url: "https://www.linkedin.com/company/sentrixai-oman/",
+  },
+  {
+    id: "phone",
+    platform: { ar: "الهاتف", en: "PHONE" },
+    handle: {
+      ar: "+968 90985654",
+      en: "+968 90985654",
+    },
+    url: "tel:+96890985654",
   },
   {
     id: "email",
     platform: { ar: "البريد", en: "EMAIL" },
-    // PLACEHOLDER — replace with official email when available
+    // Waiting for official email — do not invent an address
     handle: {
       ar: "ADD_OFFICIAL_EMAIL",
       en: "ADD_OFFICIAL_EMAIL",
     },
-    // PLACEHOLDER — e.g. "mailto:contact@example.com"
     url: "",
   },
 ];

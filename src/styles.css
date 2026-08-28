@@ -326,6 +326,16 @@ button { font: inherit; }
   box-shadow: 0 10px 28px rgba(10, 102, 194, 0.18);
 }
 
+.channel-phone .channel-icon {
+  color: var(--turquoise);
+  background: rgba(18, 200, 181, 0.12);
+  border-color: rgba(18, 200, 181, 0.3);
+}
+.channel-phone:hover:not(.is-disabled) {
+  border-color: rgba(255, 146, 8, 0.45);
+  box-shadow: 0 10px 28px rgba(18, 200, 181, 0.16);
+}
+
 .channel-email .channel-icon {
   color: var(--cyan);
   background: rgba(6, 184, 216, 0.12);
