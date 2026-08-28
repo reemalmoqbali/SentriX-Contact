@@ -153,22 +153,21 @@ button { font: inherit; }
 
 .brand-block {
   text-align: center;
-  margin: 0 0 36px;
+  margin: 0 0 32px;
 }
 .brand-mark-wrap {
   width: 96px;
-  height: 96px;
   margin: 0 auto 24px;
-  display: grid;
-  place-items: center;
+  display: block;
   background: transparent;
+  line-height: 0;
 }
 .brand-mark {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: contain;
-  filter: drop-shadow(0 0 1.5px rgba(255, 255, 255, 0.25)) drop-shadow(0 0 5px rgba(255, 255, 255, 0.1));
+  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0.2));
 }
 .brand-name {
   margin: 0;
@@ -390,21 +389,20 @@ button { font: inherit; }
     padding: 26px 28px 28px;
   }
   .brand-block {
-    margin-bottom: 42px;
+    margin-bottom: 40px;
   }
   .brand-mark-wrap {
     width: 110px;
-    height: 110px;
     margin-bottom: 26px;
   }
   .intro-block h1 {
-    font-size: 48px;
+    font-size: 46px;
   }
   [dir="rtl"] .intro-block h1 {
-    font-size: 48px;
+    font-size: 46px;
   }
   .intro-block + .divider {
-    margin: 40px 0 18px;
+    margin: 36px 0 16px;
   }
   .channel-card { min-height: 78px; }
 }
