@@ -22,6 +22,15 @@ export const contactChannels = [
     url: "https://wa.me/96890985654",
   },
   {
+    id: "phone",
+    platform: { ar: "الهاتف", en: "PHONE" },
+    handle: {
+      ar: "+968 90985654",
+      en: "+968 90985654",
+    },
+    url: "tel:+96890985654",
+  },
+  {
     id: "instagram",
     platform: { ar: "إنستغرام", en: "INSTAGRAM" },
     handle: {
@@ -38,15 +47,6 @@ export const contactChannels = [
       en: "Follow SentriX AI on LinkedIn",
     },
     url: "https://www.linkedin.com/company/sentrixai-oman/",
-  },
-  {
-    id: "phone",
-    platform: { ar: "الهاتف", en: "PHONE" },
-    handle: {
-      ar: "+968 90985654",
-      en: "+968 90985654",
-    },
-    url: "tel:+96890985654",
   },
   {
     id: "email",

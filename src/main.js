@@ -6,8 +6,8 @@ const copy = {
     subtitle: "اختر وسيلة التواصل المناسبة لك.",
     channelsTitle: "القنوات الرسمية",
     footerNote: "يسعدنا أن نبقى على تواصل معكم.",
-    open: "OPEN",
-    unavailable: "OPEN",
+    open: "›",
+    unavailable: "›",
     tagline: brand.tagline.ar,
   },
   en: {
@@ -15,8 +15,8 @@ const copy = {
     subtitle: "Choose your preferred way to connect with us.",
     channelsTitle: "OFFICIAL CHANNELS",
     footerNote: "We’d love to stay connected.",
-    open: "OPEN",
-    unavailable: "OPEN",
+    open: "›",
+    unavailable: "›",
     tagline: brand.tagline.en,
   },
 };
